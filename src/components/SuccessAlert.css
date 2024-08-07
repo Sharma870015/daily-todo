@@ -1,0 +1,30 @@
+/* SuccessAlert.css */
+.success-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .success-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .success-message {
+    flex: 1;
+  }
+  
+  .success-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

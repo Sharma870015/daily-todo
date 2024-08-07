@@ -1,0 +1,60 @@
+.reminder-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    max-width: 350px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .notification-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .notification-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f8f9fa;
+  }
+  
+  .notification-description {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #e9ecef;
+  }
+  
+  .close-button {
+    align-self: flex-end;
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .close-button:hover {
+    background-color: #e04e4e;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

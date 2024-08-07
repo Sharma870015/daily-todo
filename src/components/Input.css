@@ -1,0 +1,37 @@
+.main-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+button.btn-click {
+    border: 1px solid #878787;
+    border-radius: 30px;
+    background: #6767ff;
+    color: white;
+    padding: 5px;
+    width: 85px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-family: "Abel", sans-serif;
+    height: 35px;
+}
+input.for-input {
+    border: 2px solid #e4dfdf;
+    border-radius: 30px;
+    margin-right: 5px;
+    width: 35em;
+    height: 35px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: "Abel", sans-serif;
+}
+
+input.for-input:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-family: "Abel", sans-serif;
+}

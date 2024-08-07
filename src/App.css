@@ -1,0 +1,306 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+input.input-ofTodo {
+  border: 1px solid #868686;
+  border-radius: 30px;
+  height: 35px;
+  width: 30em;
+  padding-left: 15px;
+}
+button.todo-btn {
+  border: 1px solid #868686;
+  border-radius: 30px;
+  margin-left: 5px;
+  height: 33px;
+  width: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6666ff;
+}
+h1.for-manage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 60px;
+}
+.main-todo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-todo {
+  display: grid;
+}
+
+.for-alignment {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+h1.for-manage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.second-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+.list-todo {
+  list-style-type: none;
+  padding: 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: floralwhite;
+}
+
+.li-forTodoList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px; /* Adds margin between each todo item */
+}
+
+.for-lisAlign {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo-actions {
+  display: flex;
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 10px; /* Adds space between list items and icons */
+}
+
+
+
+
+.list-todo {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ccc; /* Adds a border around the Todo list */
+  border-radius: 5px; /* Adds rounded corners to the border */
+  margin-top: 20px; /* Adds margin at the top of the list */
+}
+
+.li-forTodoList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px; /* Adds margin between each todo item */
+}
+
+.li-forTodoList:last-child {
+  border-bottom: none; /* Removes the bottom border for the last item */
+  margin-bottom: 10px; /* Adds bottom margin for the last item as well */
+}
+
+.for-lisAlign {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 10px; /* Adds space between list items and icons */
+}
+
+
+/* App.css or a new main layout CSS file */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 600px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-links {
+    order: 1;
+  }
+
+  .social-media {
+    order: 2;
+  }
+}
+
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+}
