@@ -1,0 +1,391 @@
+/* Base Styles */
+
+/* Container */
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px; /* Reduced padding */
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?fit=crop&w=1650&q=80') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; /* Keeps background image fixed */
+  min-height: 100vh; /* Ensures the container covers the full height of the viewport */
+  box-sizing: border-box; /* Includes padding and border in element's total width and height */
+}
+
+/* Greeting Section */
+.greeting-content {
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+  border-radius: 12px; /* Reduced border radius */
+  padding: 10px; /* Reduced padding */
+  margin-bottom: 10px; /* Reduced margin */
+  max-width: 600px; /* Reduced max-width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Reduced shadow */
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+}
+
+.greeting-content .avatar {
+  width: 45px; /* Reduced size */
+  height: 45px; /* Reduced size */
+  border-radius: 50%;
+  background: linear-gradient(135deg, #007bff, #00d2ff);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px; /* Reduced font size */
+  margin-right: 10px; /* Reduced margin */
+}
+
+.greeting-content h2 {
+  margin: 0;
+  font-size: 1.3em; /* Reduced font size */
+  color: #333;
+}
+
+.greeting-content p {
+  margin: 0;
+  font-size: 0.9em; /* Reduced font size */
+  color: #666;
+}
+
+/* Todo List Box */
+.todo-list-box {
+  width: 100%;
+  max-width: 700px; /* Reduced max-width */
+  background: #fff;
+  border-radius: 12px; /* Reduced border radius */
+  padding: 15px; /* Reduced padding */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+/* Todo Header */
+.todo-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.todo-input {
+  flex: 1;
+  margin-right: 8px; /* Reduced margin */
+  padding: 10px; /* Reduced padding */
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 0.9em; /* Reduced font size */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  width: 100%;
+}
+
+.todo-button {
+  background: linear-gradient(135deg, #007bff, #00d2ff);
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* Reduced padding */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em; /* Reduced font size */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  transition: background 0.3s ease;
+}
+
+.todo-button:hover {
+  background: linear-gradient(135deg, #0056b3, #00aaff);
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px; /* Reduced border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  margin-bottom: 10px; /* Reduced margin */
+  padding: 10px; /* Reduced padding */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.todo-item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px); /* Reduced transform effect */
+}
+
+.todo-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px; /* Reduced width */
+  height: 100%;
+  background: linear-gradient(135deg, #007bff, #00d2ff);
+}
+
+.todo-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item-date {
+  background: #e6f7ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 6px; /* Reduced border radius */
+  padding: 6px 8px; /* Reduced padding */
+  margin-bottom: 6px; /* Reduced margin */
+  display: inline-block;
+  font-size: 0.8em; /* Reduced font size */
+}
+
+.todo-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1em; /* Reduced font size */
+  margin-bottom: 5px; /* Reduced margin */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.todo-description {
+  color: #666;
+  font-size: 0.8em; /* Reduced font size */
+  margin-top: 5px; /* Reduced margin */
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.date-time {
+  font-size: 0.7em; /* Reduced font size */
+  color: #999;
+}
+
+/* Todo Actions */
+.todo-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px; /* Reduced gap */
+  margin-top: 5px; /* Reduced margin */
+}
+
+.icon {
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .greeting-content {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .greeting-content .avatar {
+    margin: 0 auto 10px; /* Reduced margin */
+  }
+
+  .todo-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .todo-input {
+    margin-bottom: 8px; /* Reduced margin */
+    width: 100%;
+  }
+
+  .todo-button {
+    width: 100%;
+  }
+
+  .todo-item {
+    flex-direction: column;
+  }
+
+  .todo-item-content {
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .greeting-content {
+    max-width: 90%;
+  }
+
+  .todo-list-box {
+    padding: 10px; /* Reduced padding */
+  }
+
+  .todo-input {
+    font-size: 0.9em; /* Reduced font size */
+  }
+
+  .todo-button {
+    font-size: 0.9em; /* Reduced font size */
+  }
+
+  .todo-item {
+    padding: 10px; /* Reduced padding */
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .todo-list-box {
+    padding: 15px; /* Reduced padding */
+  }
+
+  .todo-input {
+    font-size: 1em; /* Adjusted font size */
+  }
+
+  .todo-button {
+    font-size: 1em; /* Adjusted font size */
+  }
+
+  .todo-item {
+    padding: 15px; /* Adjusted padding */
+  }
+}
+
+/* Todo Input */
+.todo-input {
+  flex: 1;
+  margin-right: 8px; /* Reduced margin */
+  padding: 10px; /* Reduced padding */
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 0.9em; /* Reduced font size */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .todo-input {
+      margin-right: 0;
+      margin-bottom: 8px; /* Reduced margin */
+      font-size: 0.9em; /* Adjusted font size */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .todo-input {
+    font-size: 0.9em; /* Adjusted font size */
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .todo-input {
+    font-size: 1em; /* Adjusted font size */
+  }
+}
+
+input.for-updatelist {
+  margin-bottom: 8px; /* Reduced margin */
+  font-size: 14px; /* Reduced font size */
+}
+
+input.for-updatedescr {
+  font-size: 14px; /* Reduced font size */
+}
+
+button.Update-btn {
+  background: #007fff;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+input.todo-input {
+  padding-right: 0;
+}
+
+
+/* TodoList.css */
+
+.todo-item {
+  margin-bottom: 10px;
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column; /* Ensure elements are stacked vertically */
+}
+
+.todo-title {
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between title and description */
+}
+
+.todo-description {
+  color: #666; /* Optional: for better visibility */
+}
+/* TodoList.css */
+
+.todo-info {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.todo-text {
+  display: flex;
+  flex-direction: column; /* Ensure title and description are stacked vertically */
+}
+
+.todo-title {
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between title and description */
+}
+
+.todo-description {
+  color: #666; /* Optional: for better visibility */
+}
+.empty-todo-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #888;
+  margin-top: 20px;
+}
+.todo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-input {
+  margin-bottom: 10px;
+  width: 80%; /* Adjust as necessary */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -8px; /* Adjust as necessary */
+  margin-bottom: 10px;
+  text-align: center;
+}

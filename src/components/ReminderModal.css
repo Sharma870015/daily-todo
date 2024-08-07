@@ -1,0 +1,115 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is on top of other content */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px; /* Slightly wider for better usability */
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  animation: fadeIn 0.3s ease-out; /* Fade-in effect */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px; /* More space between form elements */
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333; /* Slightly darker label text */
+}
+
+/* Input Fields */
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd; /* Lighter border for a cleaner look */
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px; /* Larger font size for readability */
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff; /* Primary blue color */
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+button:active {
+  background-color: #004494; /* Even darker blue on click */
+  transform: translateY(0); /* Remove lift effect on click */
+}
+
+/* Save Button */
+.for-Save {
+  background-color: #28a745; /* Green color for save */
+}
+
+.for-Save:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Cancel Button */
+.for-cancel {
+  background-color: #dc3545; /* Red color for cancel */
+}
+
+.for-cancel:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Centered Header */
+h2.set-align {
+  text-align: center;
+  margin: 0;
+  color: #333; /* Darker text color */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

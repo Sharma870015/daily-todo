@@ -1,0 +1,51 @@
+/* .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    animation: slide-in 0.3s ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .notification-content {
+    padding: 16px;
+  }
+  
+  .notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notification-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .notification p {
+    margin: 8px 0 0;
+    color: #555;
+  }
+   */
